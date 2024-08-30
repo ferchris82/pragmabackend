@@ -19,11 +19,6 @@ public class ProductEntity {
     private String description;
     private Integer quantity;
     private BigDecimal price;
-
-    @ManyToOne
-    @JoinColumn(name = "brand_id")
-    private BrandEntity brand;
-    
     private List<Long> categoryIds;
     private List<Long> brandIds;
 }

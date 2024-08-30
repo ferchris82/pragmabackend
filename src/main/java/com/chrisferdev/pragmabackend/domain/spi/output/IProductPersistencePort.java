@@ -8,8 +8,4 @@ public interface IProductPersistencePort {
     Product saveProduct(Product product);
     PaginatedResult<Product> findAllProducts(String sortOrder, int page, int size);
     PaginatedResult<Product> findProductsByName(String name, String sortOrder, int page, int size);
-    PaginatedResult<Product> findProductsByBrand(String brandName, String sortOrder, int page, int size);
-
-
-
 }

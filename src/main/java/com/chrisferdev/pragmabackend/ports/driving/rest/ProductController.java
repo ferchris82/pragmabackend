@@ -100,16 +100,4 @@ public class ProductController {
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
 
-    @GetMapping("/by-brand")
-    public ResponseEntity<PaginatedResult<Product>> getProductsByBrand(
-            @RequestParam String brandName,
-            @RequestParam(defaultValue = "asc") String sortOrder,
-            @RequestParam(defaultValue = "0") int page,
-            @RequestParam(defaultValue = "10") int size) {
-
-        PaginatedResult<Product> result = productServiceImpl.findProductsByBrand(brandName, sortOrder, page, size);
-        return new ResponseEntity<>(result, HttpStatus.OK);
-    }
-
-
 }
