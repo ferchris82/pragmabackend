@@ -1,7 +1,6 @@
 package com.chrisferdev.pragmabackend.ports.driven.jpa.adapter;
 
 import com.chrisferdev.pragmabackend.configuration.exception.ProductException;
-import com.chrisferdev.pragmabackend.domain.model.Brand;
 import com.chrisferdev.pragmabackend.domain.model.PaginatedResult;
 import com.chrisferdev.pragmabackend.domain.model.Product;
 import com.chrisferdev.pragmabackend.domain.spi.output.IProductPersistencePort;
